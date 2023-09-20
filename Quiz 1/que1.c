@@ -1,10 +1,12 @@
 #include <stdio.h>
 
-void solve() {
+void solve()
+{
     printf("%d %d %d", (076), (28), (0x82));
 }
 
-int main() {
+int main()
+{
     solve();
     return 0;
 }

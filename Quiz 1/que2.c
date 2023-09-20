@@ -3,7 +3,8 @@
 void solve()
 {
     int x = 1, y = 2;
-    printf(x > y ?"Greater": x == y ?"Equal": "Lesser");
+    printf(x > y ? "Greater" : x == y ? "Equal"
+                                      : "Lesser");
 }
 
 int main()
