@@ -19,7 +19,7 @@ int Age14(struct student students[], int n)
     {
         if (students[i].age == 14)
         {
-            printf("Student Name= %s , Roll no= %s , Age= %d , Address= %s\n", students[i].name, students[i].roll, students[i].age, students[i].address);
+            printf("Student Name= %s , Roll no= %d , Age= %d , Address= %s\n", students[i].name, students[i].roll, students[i].age, students[i].address);
         }
     }
     return 0;
@@ -31,7 +31,7 @@ int EvenRoll(struct student students[], int n)
     {
         if (students[i].roll % 2 == 0)
         {
-            printf("Student Name= %s , Roll no= %s , Age= %d , Address= %s\n", students[i].name, students[i].roll, students[i].age, students[i].address);
+            printf("Student Name= %s , Roll no= %d , Age= %d , Address= %s\n", students[i].name, students[i].roll, students[i].age, students[i].address);
         }
     }
     return 0;
@@ -43,7 +43,7 @@ int RollNo(struct student students[], int n, int roll)
     {
         if (students[i].roll == roll)
         {
-            printf("Student Name= %s , Roll no= %s , Age= %d , Address= %s\n", students[i].name, students[i].roll, students[i].age, students[i].address);
+            printf("Student Name= %s , Roll no= %d , Age= %d , Address= %s\n", students[i].name, students[i].roll, students[i].age, students[i].address);
         }
     }
     return 0;
@@ -67,14 +67,14 @@ int main()
         scanf("%s", students[i].address);
     }
 
-    printf("Students with age 14: ");
+    printf("Students with age 14: \n");
     Age14(students, n);
-    printf("\nStudents with even roll no:\n");
+    printf("Students with even roll no: \n");
     EvenRoll(students, n);
-    printf("\nEnter roll no to search: ");
+    printf("Enter roll no to search: \n");
     int roll;
     scanf("%d", &roll);
-    printf("\nStudents with roll no %d:\n", roll);
+    printf("Students with roll no %d: \n", roll);
     RollNo(students, n, roll);
 
     return 0;
