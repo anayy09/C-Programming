@@ -67,7 +67,7 @@ int main()
         scanf("%s", students[i].address);
     }
 
-    printf("\nStudents with age 14:\n");
+    printf("Students with age 14: ");
     Age14(students, n);
     printf("\nStudents with even roll no:\n");
     EvenRoll(students, n);
